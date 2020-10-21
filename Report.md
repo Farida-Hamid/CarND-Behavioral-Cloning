@@ -108,36 +108,18 @@ To capture good driving behavior, I first used a combination of 1 laps of center
 
 The biggest shift in result happed when I manually modified the steering angles, as I didn't have a joystick. First I followed the images in the IMG folder until I got to the turning points and changed the steering measurement of the correlated data. Since I was using a keyboard, there were many turning images associated with 0 steering angles. I calculated the average for the steering angles for each turn and copied and pasted that data for augmentation. In the code I included a section (while reading the data) to further adjust the manipulated data. The figure bellow shows a histogram of the steering angles.
 
-<figure>
- <img src="histogram for steering angle measurments.png" width="361" alt="Combined Image" />
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> A histogram of steering angles (above)</p> 
- </figcaption>
-</figure>
- <p></p> 
+![A histogram of steering angles](https://github.com/Farida-Hamid/CarND-Behavioral-Cloning/blob/main/histogram%20for%20steering%20angle%20measurments.PNG?raw=true "Title")
+
 
 I randomly shuffled the data set and put of the data into a validation set and flipped images and angles. For example, here is an image that has then been flipped:
 
-<figure>
- <img src="flipping.png" width="361" alt="Combined Image" />
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> A sample of the data, original and flipped over (above)</p> 
- </figcaption>
-</figure>
- <p></p> 
+![A sample of the data, original and flipped over](https://github.com/Farida-Hamid/CarND-Behavioral-Cloning/blob/main/flipping.PNG?raw=true "Title")
+
 
 After the collection process, I had 14,488 data points, 11590 for training and 2898 for validation. The graph bellow shows their behavior over 7 epochs.
 
-<figure>
- <img src="epoch.png" width="361" alt="Combined Image" />
- <figcaption>
- <p></p> 
- <p style="text-align: center;"> Training for 7 epoches (above)</p> 
- </figcaption>
-</figure>
- <p></p>
+![Training for 7 epoches](https://github.com/Farida-Hamid/CarND-Behavioral-Cloning/blob/main/epoch.PNG?raw=true "Title")
+
 
 I preprocessed this data by cropping and normalizing them, before feeding them to the tuned NVIDIA architecture.
 
